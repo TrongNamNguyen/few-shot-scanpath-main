@@ -139,6 +139,7 @@
 		"separate_fix_arch": true,
 		"history_emb_mtd": "normalized_num_fixs",
 		"checkpoint": "ckp_27999.pt",
-		"pretrain_user_path": ""
+		"pretrain_user_path": "",
+		"PIXEL_DECODER_WEIGHTS": "data/M2F_R50_MSDeformAttnPixelDecoder.pkl"
 	}
 }

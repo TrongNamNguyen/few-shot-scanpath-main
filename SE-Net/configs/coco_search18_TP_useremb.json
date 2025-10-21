@@ -150,6 +150,7 @@
 		"history_emb_mtd": "normalized_num_fixs",
 		"checkpoint": "ckp_27999.pt",
 		"pretrain_user_path": "",
-		"pretrain_task": ""
+		"pretrain_task": "",
+		"PIXEL_DECODER_WEIGHTS": "data/M2F_R50_MSDeformAttnPixelDecoder.pkl"
 	}
 }

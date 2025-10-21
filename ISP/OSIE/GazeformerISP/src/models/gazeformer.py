@@ -96,10 +96,11 @@ class gazeformer(nn.Module):
         self.spatial_dim = spatial_dim
         self.transformer = transformer
         self.hidden_dim = transformer.d_model
+        self.device = device
         # subject embeddings
         # self.subject_embed = nn.Embedding(subject_num, subject_feature_dim)
         print(f'load user embedding from {args.user_emb_path}')
-        self.subject_embed = torch.load(args.user_emb_path)
+        self.subject_embed = torch.load(args.user_emb_path, map_location=self.device)
         if self.subject_embed.dim() == 1:
             self.subject_embed = self.subject_embed.unsqueeze(0)
         #fixation embeddings
